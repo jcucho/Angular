@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Cibertec.Angular</title>
+
+    <environment include="Development">
+        <link href="~/libraries/bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+</head>
+<body ng-controller="applicationController as vm" ng-init="init('@ViewBag.WebApiUrl')">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Cibertec.Angular</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a ng-if="!vm.validate()" ui-sref="login" ui-sref-active="active">Login</a></li>
+                    <li><a ng-if="vm.validate()" ng-click="vm.logout()"href="#" ui-sref-active="active">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; 2017 - Cibertec.Angular</p>
+        </footer>
+    </div>
+
+    <environment include="Development">
+        <script src="~/libraries/jquery/jquery.js"></script>
+        <script src="~/libraries/bootstrap/js/bootstrap.js"></script>
+        <script src="~/libraries/angular/angular.js"></script>
+        <script src="~/libraries/angular/angular-ui-router.js"></script>
+        <script src="~/libraries/angular/angular-local-storage.js"></script>
+
+        <script src="~/app/app.js"></script>
+        <script src="~/app/app.config.js"></script>
+        <script src="~/app/app.routes.js"></script>
+        <script src="~/app/app.controller.js"></script>
+
+        <script src="~/app/shared/data.service.js"></script>
+        <script src="~/app/shared/authentication.service.js"></script>        
+        <script src="~/app/shared/settings.service.js"></script>
+        <script src="~/app/public/login/login.controller.js"></script>
+    </environment>
+</body>
+</html>
