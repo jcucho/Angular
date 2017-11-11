@@ -12,11 +12,11 @@
     <ul uib-pagination total-items="vm.totalRecords" items-per-page="vm.itemsPerPage"  ng-model="vm.currentPage"  max-size="vm.maxSize" ng-change="vm.pageChanged()"></ul>
     <div class="row">
         <product-card ng-repeat-start="product in vm.productList"
-                      id="{{product.id}}"
-                      product-name="{{product.productName}}"
-                      supplier-id="{{product.supplierId}}"
-                      unit-price="{{product.unitPrice}}"
-                      package="{{product.package}}"
+                      id="{{::product.id}}"
+                      product-name="{{::product.productName}}"
+                      supplier-id="{{::product.supplierId}}"
+                      unit-price="{{::product.unitPrice}}"
+                      package="{{::product.package}}"
                       is-discontinued="product.isDiscontinued">
 
             <button ng-click="vm.getProduct(product.id); vm.edit();" data-toggle="modal" data-target="#modal-container" class="btn btn-success btn-sm">
