@@ -8,11 +8,11 @@
             transclude: true,
             scope: {
                 id: '@',
-                productName: '@',
-                supplierId: '@',
-                unitPrice: '@',
-                package: '@',
-                isDiscontinued: '='
+                firstName: '@',
+                lastName: '@',
+                city: '@',
+                country: '@',
+                phone: '@'
             },
             templateUrl: 'app/private/customer/directives/customer-card/customer-card.html'
 
