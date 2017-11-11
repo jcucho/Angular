@@ -21,6 +21,7 @@
         vm.currentPage = 1;
         vm.maxSize = 10;
         vm.itemsPerPage = 30;
+
         //Funciones
         vm.getProduct = getProduct;
         vm.create = create;

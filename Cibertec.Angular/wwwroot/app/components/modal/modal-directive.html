@@ -12,7 +12,7 @@
             </div>
             <div class="modal-body">
                 <ng-transclude></ng-transclude>
-                <button ng-if="!readOnly && !isDelete" class="btn btn-success" type="submit" ngclick="saveFunction();">
+                <button ng-if="!readOnly && !isDelete" class="btn btn-success" type="submit" ng-click="saveFunction();">
                     {{buttonTitle}}
                 </button>
                 <button ng-if="isDelete" class="btn btn-danger" type="submit" ng-click="saveFunction();">
