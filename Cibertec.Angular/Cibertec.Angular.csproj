@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Content Include="Sass\base\_site.scss" />
+    <Content Include="Sass\directives\_supplier-card.scss" />
     <Content Include="Sass\directives\_product-card.scss" />
     <Content Include="Sass\helpers\_colors.scss" />
     <Content Include="Sass\helpers\_mixin.scss" />

@@ -1,0 +1,31 @@
+﻿<div class="form-horizontal">
+    <input type="hidden" ng-model="orderitem.id" value="{{orderitem.id}}" />
+    <div class="form-group">
+        <label class="col-sm-4 control-label">Order Id: </label>
+        <div class="col-sm-6">
+            <input id="orderId" class="form-control" type="text"
+                   ng-model="orderitem.orderId" value="{{orderitem.orderId}}" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-4 control-label">Product Id: </label>
+        <div class="col-sm-6">
+            <input class="form-control" type="text" ng-model="orderitem.productId"
+                   value="{{orderitem.productId}}" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-4 control-label">Unit Price: </label>
+        <div class="col-sm-6">
+            <input class="form-control" type="text" ng-model="orderitem.unitPrice"
+                   value="{{orderitem.unitPrice}}" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-4 control-label">Quantity: </label>
+        <div class="col-sm-6">
+            <input class="form-control" type="text" ng-model="orderitem.quantity"
+                   value="{{orderitem.quantity}}" />
+        </div>
+    </div>
+</div>

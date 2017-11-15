@@ -29,6 +29,9 @@
                     <li><a ng-if="vm.validate()" ng-click="vm.logout()" href="#" ui-sref-active="active">Logout</a></li>
                     <li><a ng-if="vm.validate()" ui-sref="product" ui-srefactive="active">Product</a></li>
                     <li><a ng-if="vm.validate()" ui-sref="customer" ui-srefactive="active">Customer</a></li>
+                    <li><a ng-if="vm.validate()" ui-sref="supplier" ui-srefactive="active">Supplier</a></li>
+                    <li><a ng-if="vm.validate()" ui-sref="order" ui-srefactive="active">Order</a></li>
+                    <li><a ng-if="vm.validate()" ui-sref="orderitem" ui-srefactive="active">Order Item</a></li>
                 </ul>
             </div>
         </div>
@@ -71,6 +74,19 @@
         <script src="~/app/private/customer/directives/customer-card/customer.card.js"></script>
         <script src="~/app/private/customer/directives/customer-form/customer.form.js"></script>
         <script src="~/app/private/customer/customer.controller.js"></script>
+
+        <script src="~/app/private/supplier/directives/supplier-card/supplier.card.js"></script>
+        <script src="~/app/private/supplier/directives/supplier-form/supplier.form.js"></script>
+        <script src="~/app/private/supplier/supplier.controller.js"></script>
+
+        <script src="~/app/private/order/directives/order-card/order.card.js"></script>
+        <script src="~/app/private/order/directives/order-form/order.form.js"></script>
+        <script src="~/app/private/order/order.controller.js"></script>
+
+        <script src="~/app/private/orderitem/directives/orderitem-card/orderitem.card.js"></script>
+        <script src="~/app/private/orderitem/directives/orderitem-form/orderitem.form.js"></script>
+        <script src="~/app/private/orderitem/orderitem.controller.js"></script>
+
     </environment>
 </body>
 </html>
