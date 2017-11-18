@@ -11,6 +11,8 @@
         vm.user = {};
         vm.title = 'Login';
         vm.login = login;
+        vm.showError = false;
+
         init();
         function init() {
             if (configService.setLogin()) $state.go("home");

@@ -42,35 +42,17 @@
     </div>
 
     <environment include="Development">
-        <script src="~/libraries/jquery/jquery.js"></script>
-        <script src="~/libraries/bootstrap/js/bootstrap.js"></script>
-
-        <script src="~/libraries/angular/angular.js"></script>
-        <script src="~/libraries/angular/angular-ui-router.js"></script>
-        <script src="~/libraries/angular/angular-local-storage.js"></script>
-        <script src="~/libraries/angular/ui-bootstrap-tpls-2.5.0.js"></script>        
-
-        <script src="~/app/app.js"></script>
-        <script src="~/app/app.config.js"></script>
-        <script src="~/app/app.controller.js"></script>
-        <script src="~/app/app.routes.js"></script>
-        <script src="~/app/app.interceptor.js"></script>
-
-        <script src="~/app/shared/data.service.js"></script>
-        <script src="~/app/shared/authentication.service.js"></script>
-        <script src="~/app/shared/settings.service.js"></script>
-
-        <script src="~/app/public/login/login.controller.js"></script>
-
-        <script src="~/app/components/modal/modal.directive.js"></script>
-
-        <script src="~/app/private/product/directives/product-card/product.card.js"></script>
-        <script src="~/app/private/product/directives/product-form/product.form.js"></script>
-        <script src="~/app/private/product/product.controller.js"></script>
-
-        <script src="~/app/private/customer/directives/customer-card/customer.card.js"></script>
-        <script src="~/app/private/customer/directives/customer-form/customer.form.js"></script>
-        <script src="~/app/private/customer/customer.controller.js"></script>
+        <script src="~/js/bootstrap.js"></script>
+        <script src="~/js/angular.js"></script>
+        <script src="~/js/app-site.js"></script>
+        <script src="~/js/app-cibertec.js"></script>
     </environment>
+    <environment include="Production">
+        <script src="~/js/bootstrap.min.js"></script>
+        <script src="~/js/angular.min.js"></script>
+        <script src="~/js/app-site.min.js"></script>
+        <script src="~/js/app-cibertec.min.js"></script>
+    </environment>
+
 </body>
 </html>
