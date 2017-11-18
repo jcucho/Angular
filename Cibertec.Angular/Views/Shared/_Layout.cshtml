@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Cibertec.Angular</title>
 
-    <environment include="Development">
+    <environment names="Development">
         <link href="~/libraries/bootstrap/css/bootstrap.css" rel="stylesheet" />
         <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment names="Production">
+        <link href="~/libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="~/css/site.min.css" />
     </environment>
 </head>
 <body ng-controller="applicationController as vm" ng-init="init('@ViewBag.WebApiUrl')">
